@@ -16,5 +16,15 @@ namespace frmMenu
         {
             InitializeComponent();
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+            }
+            frmMenu frm = new frmMenu();
+            frm.ShowDialog();
+        }
     }
 }
