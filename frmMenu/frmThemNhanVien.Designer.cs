@@ -31,6 +31,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.grbQuanLy = new System.Windows.Forms.GroupBox();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.txtTienluong = new System.Windows.Forms.TextBox();
             this.cbbPer = new System.Windows.Forms.ComboBox();
             this.cbbChucvu = new System.Windows.Forms.ComboBox();
@@ -69,7 +70,6 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.grbQuanLy.SuspendLayout();
             this.grbDsNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDsnv)).BeginInit();
@@ -137,6 +137,16 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(847, 285);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(108, 30);
+            this.btnAdd.TabIndex = 31;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtTienluong
             // 
@@ -414,7 +424,7 @@
             // 
             // dataDsnv
             // 
-            this.dataDsnv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataDsnv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataDsnv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataDsnv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataDsnv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -443,93 +453,72 @@
             this.colManv.HeaderText = "Mã Nhân Viên";
             this.colManv.MinimumWidth = 6;
             this.colManv.Name = "colManv";
-            this.colManv.Width = 117;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Họ Tên";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 78;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Giới Tính";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 87;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Ngày Sinh";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 94;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Địa Chỉ";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 57;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Điện Thoại";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 98;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Ngày Vào Làm";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 95;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Chức Vụ";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 84;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "Tiền Lương";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 99;
             // 
             // Column9
             // 
             this.Column9.HeaderText = "Tên Đăng Nhập";
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
-            this.Column9.Width = 126;
             // 
             // Column10
             // 
             this.Column10.HeaderText = "Mật Khẩu";
             this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
-            this.Column10.Width = 90;
             // 
             // Column11
             // 
             this.Column11.HeaderText = "Quyền Hạn";
             this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(847, 285);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(108, 30);
-            this.btnAdd.TabIndex = 31;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // frmThemNhanVien
             // 
@@ -543,7 +532,7 @@
             this.MaximizeBox = false;
             this.Name = "frmThemNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmQuanLyNhanVien";
+            this.Text = "Thêm Nhân Viên";
             this.Load += new System.EventHandler(this.frmThemNhanVien_Load);
             this.grbQuanLy.ResumeLayout(false);
             this.grbQuanLy.PerformLayout();

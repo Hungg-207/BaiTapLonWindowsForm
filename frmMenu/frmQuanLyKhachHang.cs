@@ -23,8 +23,6 @@ namespace frmMenu
             {
                 this.Hide();
             }
-            frmMenu frm = new frmMenu();
-            frm.ShowDialog();
         }
     }
 }

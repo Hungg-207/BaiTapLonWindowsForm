@@ -1,6 +1,6 @@
 ﻿namespace frmMenu
 {
-    partial class frmSuaXoa
+    partial class frmXoaNhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,8 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.grbQuanLy = new System.Windows.Forms.GroupBox();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnTimkiem = new System.Windows.Forms.Button();
             this.txtMaNV = new System.Windows.Forms.TextBox();
@@ -48,8 +50,6 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.grbQuanLy.SuspendLayout();
             this.grbDsNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -86,6 +86,25 @@
             this.grbQuanLy.TabStop = false;
             this.grbQuanLy.Text = "Thông Tin Nhân Viên";
             this.grbQuanLy.Enter += new System.EventHandler(this.grbQuanLy_Enter);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(835, 53);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(108, 30);
+            this.btnXoa.TabIndex = 34;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(721, 53);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(108, 30);
+            this.btnSua.TabIndex = 33;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThoat
             // 
@@ -127,17 +146,18 @@
             // grbDsNV
             // 
             this.grbDsNV.Controls.Add(this.dataGridView1);
+            this.grbDsNV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grbDsNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbDsNV.Location = new System.Drawing.Point(7, 192);
+            this.grbDsNV.Location = new System.Drawing.Point(0, 177);
             this.grbDsNV.Name = "grbDsNV";
-            this.grbDsNV.Size = new System.Drawing.Size(1179, 507);
+            this.grbDsNV.Size = new System.Drawing.Size(1193, 714);
             this.grbDsNV.TabIndex = 3;
             this.grbDsNV.TabStop = false;
             this.grbDsNV.Text = "Danh Sách Nhân Viên";
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -157,7 +177,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 20);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 45;
-            this.dataGridView1.Size = new System.Drawing.Size(1173, 484);
+            this.dataGridView1.Size = new System.Drawing.Size(1187, 691);
             this.dataGridView1.TabIndex = 0;
             // 
             // colManv
@@ -165,77 +185,66 @@
             this.colManv.HeaderText = "Mã Nhân Viên";
             this.colManv.MinimumWidth = 6;
             this.colManv.Name = "colManv";
-            this.colManv.Width = 117;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Họ Tên";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 78;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Giới Tính";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 87;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Ngày Sinh";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 94;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Địa Chỉ";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 57;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Điện Thoại";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 98;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Ngày Vào Làm";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 95;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Chức Vụ";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 84;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "Tiền Lương";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 99;
             // 
             // Column9
             // 
             this.Column9.HeaderText = "Tên Đăng Nhập";
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
-            this.Column9.Width = 126;
             // 
             // Column10
             // 
             this.Column10.HeaderText = "Mật Khẩu";
             this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
-            this.Column10.Width = 90;
             // 
             // Column11
             // 
@@ -243,25 +252,7 @@
             this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
             // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(721, 53);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(108, 30);
-            this.btnSua.TabIndex = 33;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(835, 53);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(108, 30);
-            this.btnXoa.TabIndex = 34;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // frmSuaXoa
+            // frmXoaNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -269,8 +260,9 @@
             this.Controls.Add(this.grbDsNV);
             this.Controls.Add(this.grbQuanLy);
             this.Controls.Add(this.lblTitle);
-            this.Name = "frmSuaXoa";
-            this.Text = "frmSuaXoa";
+            this.Name = "frmXoaNhanVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Xóa Nhân Viên";
             this.grbQuanLy.ResumeLayout(false);
             this.grbQuanLy.PerformLayout();
             this.grbDsNV.ResumeLayout(false);
@@ -288,7 +280,6 @@
         private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.Label lblMaNv;
         private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.GroupBox grbDsNV;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colManv;
@@ -303,5 +294,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.Button btnSua;
     }
 }

@@ -31,9 +31,9 @@
             this.lblBaoCao = new System.Windows.Forms.Label();
             this.cbbChonTK = new System.Windows.Forms.ComboBox();
             this.lblChonTK = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataBaoCao = new System.Windows.Forms.DataGridView();
             this.btnQuaylai = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaoCao)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBaoCao
@@ -75,15 +75,15 @@
             this.lblChonTK.TabIndex = 2;
             this.lblChonTK.Text = "Chọn Loại Thống Kê:";
             // 
-            // dataGridView1
+            // dataBaoCao
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 199);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 45;
-            this.dataGridView1.Size = new System.Drawing.Size(1297, 427);
-            this.dataGridView1.TabIndex = 3;
+            this.dataBaoCao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataBaoCao.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataBaoCao.Location = new System.Drawing.Point(0, 199);
+            this.dataBaoCao.Name = "dataBaoCao";
+            this.dataBaoCao.RowHeadersWidth = 45;
+            this.dataBaoCao.Size = new System.Drawing.Size(1297, 427);
+            this.dataBaoCao.TabIndex = 3;
             // 
             // btnQuaylai
             // 
@@ -104,7 +104,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1297, 626);
             this.Controls.Add(this.btnQuaylai);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataBaoCao);
             this.Controls.Add(this.lblChonTK);
             this.Controls.Add(this.cbbChonTK);
             this.Controls.Add(this.lblBaoCao);
@@ -112,7 +112,7 @@
             this.Name = "frmThongKeBaoCao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thống Kê Doanh Thu";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaoCao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,7 +123,7 @@
         private System.Windows.Forms.Label lblBaoCao;
         private System.Windows.Forms.ComboBox cbbChonTK;
         private System.Windows.Forms.Label lblChonTK;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataBaoCao;
         private System.Windows.Forms.Button btnQuaylai;
     }
 }

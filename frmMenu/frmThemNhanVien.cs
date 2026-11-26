@@ -75,8 +75,6 @@ namespace frmMenu
             {
                 this.Hide();
             }
-            frmMenu frm = new frmMenu();
-            frm.ShowDialog();
         }
 
         private void frmThemNhanVien_Load(object sender, EventArgs e)

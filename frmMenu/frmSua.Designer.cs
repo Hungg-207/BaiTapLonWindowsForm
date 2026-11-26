@@ -1,6 +1,6 @@
 ﻿namespace frmMenu
 {
-    partial class frmSua
+    partial class frmSuaNhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -80,14 +80,12 @@
             this.Column1.HeaderText = "Họ Tên";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 78;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Ngày Sinh";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 94;
             // 
             // btnThoat
             // 
@@ -104,49 +102,42 @@
             this.Column4.HeaderText = "Địa Chỉ";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 57;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Điện Thoại";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 98;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Ngày Vào Làm";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 95;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Chức Vụ";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 84;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "Tiền Lương";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 99;
             // 
             // Column9
             // 
             this.Column9.HeaderText = "Tên Đăng Nhập";
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
-            this.Column9.Width = 126;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Giới Tính";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 87;
             // 
             // btnSua
             // 
@@ -194,7 +185,6 @@
             this.Column10.HeaderText = "Mật Khẩu";
             this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
-            this.Column10.Width = 90;
             // 
             // txtTienluong
             // 
@@ -344,7 +334,7 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -372,7 +362,6 @@
             this.colManv.HeaderText = "Mã Nhân Viên";
             this.colManv.MinimumWidth = 6;
             this.colManv.Name = "colManv";
-            this.colManv.Width = 117;
             // 
             // Column11
             // 
@@ -511,7 +500,9 @@
             this.Controls.Add(this.grbQuanLy);
             this.Controls.Add(this.lblTitle);
             this.Name = "frmSua";
-            this.Text = "frmSua";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sửa Nhân Viên";
+            this.Load += new System.EventHandler(this.frmSua_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.grbDsNV.ResumeLayout(false);
             this.grbQuanLy.ResumeLayout(false);

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace frmMenu
 {
-    public partial class frmSua : Form
+    public partial class frmXoaNhanVien : Form
     {
-        public frmSua()
+        public frmXoaNhanVien()
         {
             InitializeComponent();
+        }
+
+        private void grbQuanLy_Enter(object sender, EventArgs e)
+        {
+
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -23,7 +28,12 @@ namespace frmMenu
             {
                 this.Hide();
             }
-            frmMenu frm = new frmMenu();
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            this.Hide();  
+            frmSuaNhanVien frm = new frmSuaNhanVien();
             frm.ShowDialog();
         }
     }

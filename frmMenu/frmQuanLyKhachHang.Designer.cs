@@ -44,14 +44,6 @@
             this.lblRank = new System.Windows.Forms.Label();
             this.grbDsNV = new System.Windows.Forms.GroupBox();
             this.dataDsnv = new System.Windows.Forms.DataGridView();
-            this.lblDt = new System.Windows.Forms.Label();
-            this.lblDiachi = new System.Windows.Forms.Label();
-            this.lblNgaysinh = new System.Windows.Forms.Label();
-            this.lblGioitinh = new System.Windows.Forms.Label();
-            this.lblHoten = new System.Windows.Forms.Label();
-            this.lblMaNv = new System.Windows.Forms.Label();
-            this.grbQuanLy = new System.Windows.Forms.GroupBox();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.colManv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +53,14 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblDt = new System.Windows.Forms.Label();
+            this.lblDiachi = new System.Windows.Forms.Label();
+            this.lblNgaysinh = new System.Windows.Forms.Label();
+            this.lblGioitinh = new System.Windows.Forms.Label();
+            this.lblHoten = new System.Windows.Forms.Label();
+            this.lblMaNv = new System.Windows.Forms.Label();
+            this.grbQuanLy = new System.Windows.Forms.GroupBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.grbDsNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDsnv)).BeginInit();
             this.grbQuanLy.SuspendLayout();
@@ -97,7 +97,7 @@
             this.cbbChucvu.Location = new System.Drawing.Point(776, 63);
             this.cbbChucvu.Name = "cbbChucvu";
             this.cbbChucvu.Size = new System.Drawing.Size(293, 30);
-            this.cbbChucvu.TabIndex = 27;
+            this.cbbChucvu.TabIndex = 7;
             // 
             // dateNgaysinh
             // 
@@ -105,7 +105,7 @@
             this.dateNgaysinh.Location = new System.Drawing.Point(256, 165);
             this.dateNgaysinh.Name = "dateNgaysinh";
             this.dateNgaysinh.Size = new System.Drawing.Size(293, 28);
-            this.dateNgaysinh.TabIndex = 25;
+            this.dateNgaysinh.TabIndex = 4;
             // 
             // cbbGioitinh
             // 
@@ -117,7 +117,7 @@
             this.cbbGioitinh.Location = new System.Drawing.Point(256, 130);
             this.cbbGioitinh.Name = "cbbGioitinh";
             this.cbbGioitinh.Size = new System.Drawing.Size(293, 30);
-            this.cbbGioitinh.TabIndex = 24;
+            this.cbbGioitinh.TabIndex = 3;
             // 
             // txtHoten
             // 
@@ -125,7 +125,7 @@
             this.txtHoten.Location = new System.Drawing.Point(256, 97);
             this.txtHoten.Name = "txtHoten";
             this.txtHoten.Size = new System.Drawing.Size(293, 28);
-            this.txtHoten.TabIndex = 23;
+            this.txtHoten.TabIndex = 2;
             // 
             // txtDiachi
             // 
@@ -133,7 +133,7 @@
             this.txtDiachi.Location = new System.Drawing.Point(256, 201);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(293, 28);
-            this.txtDiachi.TabIndex = 20;
+            this.txtDiachi.TabIndex = 5;
             // 
             // txtPass
             // 
@@ -141,7 +141,7 @@
             this.txtPass.Location = new System.Drawing.Point(775, 133);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(293, 28);
-            this.txtPass.TabIndex = 18;
+            this.txtPass.TabIndex = 9;
             // 
             // txtSodt
             // 
@@ -149,7 +149,7 @@
             this.txtSodt.Location = new System.Drawing.Point(256, 237);
             this.txtSodt.Name = "txtSodt";
             this.txtSodt.Size = new System.Drawing.Size(293, 28);
-            this.txtSodt.TabIndex = 19;
+            this.txtSodt.TabIndex = 6;
             // 
             // txtUser
             // 
@@ -157,7 +157,7 @@
             this.txtUser.Location = new System.Drawing.Point(776, 97);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(293, 28);
-            this.txtUser.TabIndex = 17;
+            this.txtUser.TabIndex = 8;
             // 
             // txtMaNV
             // 
@@ -165,7 +165,7 @@
             this.txtMaNV.Location = new System.Drawing.Point(256, 63);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(293, 28);
-            this.txtMaNV.TabIndex = 12;
+            this.txtMaNV.TabIndex = 1;
             // 
             // lblPass
             // 
@@ -210,7 +210,7 @@
             // 
             // dataDsnv
             // 
-            this.dataDsnv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataDsnv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataDsnv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataDsnv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataDsnv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -229,6 +229,60 @@
             this.dataDsnv.RowHeadersWidth = 45;
             this.dataDsnv.Size = new System.Drawing.Size(1173, 484);
             this.dataDsnv.TabIndex = 0;
+            // 
+            // colManv
+            // 
+            this.colManv.HeaderText = "Mã Nhân Viên";
+            this.colManv.MinimumWidth = 6;
+            this.colManv.Name = "colManv";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Họ Tên";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Giới Tính";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Ngày Sinh";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Địa Chỉ";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Điện Thoại";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Cấp Bậc";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Tên Đăng Nhập";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Mật Khẩu";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
             // 
             // lblDt
             // 
@@ -335,69 +389,6 @@
             this.lblTitle.Text = "QUẢN LÝ KHÁCH HÀNG";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // colManv
-            // 
-            this.colManv.HeaderText = "Mã Nhân Viên";
-            this.colManv.MinimumWidth = 6;
-            this.colManv.Name = "colManv";
-            this.colManv.Width = 127;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Họ Tên";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 84;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Giới Tính";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 94;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Ngày Sinh";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 102;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Địa Chỉ";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 83;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Điện Thoại";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 106;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Cấp Bậc";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 92;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Tên Đăng Nhập";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 126;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Mật Khẩu";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 90;
-            // 
             // frmQuanLyKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -407,7 +398,8 @@
             this.Controls.Add(this.grbQuanLy);
             this.Controls.Add(this.lblTitle);
             this.Name = "frmQuanLyKhachHang";
-            this.Text = "frmQuanLyKhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thêm Khách Hàng";
             this.grbDsNV.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataDsnv)).EndInit();
             this.grbQuanLy.ResumeLayout(false);

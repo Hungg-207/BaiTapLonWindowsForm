@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace frmMenu
 {
-    public partial class frmSuaXoa : Form
+    public partial class frmSuaKhachHang : Form
     {
-        public frmSuaXoa()
+        public frmSuaKhachHang()
         {
             InitializeComponent();
-        }
-
-        private void grbQuanLy_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -27,9 +22,7 @@ namespace frmMenu
             if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 this.Hide();
-            }
-            frmMenu frm = new frmMenu();
-            frm.ShowDialog();
+            } 
         }
     }
 }

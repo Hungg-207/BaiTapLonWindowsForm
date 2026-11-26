@@ -21,14 +21,12 @@ namespace frmMenu
         {
             if (MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                this.Hide();
                 frmDangNhap frm = new frmDangNhap();
                 frm.ShowDialog();
             }
         }
         private void thốngKêBáoCáoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmThongKeBaoCao frm = new frmThongKeBaoCao();
             frm.ShowDialog();
         }
@@ -45,7 +43,6 @@ namespace frmMenu
 
         private void thêmNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmThemNhanVien frm = new frmThemNhanVien();
             frm.ShowDialog();
             
@@ -70,14 +67,31 @@ namespace frmMenu
 
         private void sửaNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmSua frm = new frmSua();
+            frmSuaNhanVien frm = new frmSuaNhanVien();
             frm.ShowDialog();
         }
 
         private void xóaNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmSuaXoa frm = new frmSuaXoa();
+            frmXoaNhanVien frm = new frmXoaNhanVien();
+            frm.ShowDialog();
+        }
+
+        private void sửaThôngTinKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSuaKhachHang frm = new frmSuaKhachHang();
+            frm.ShowDialog();
+        }
+
+        private void thêmKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuanLyKhachHang frm = new frmQuanLyKhachHang();
+            frm.ShowDialog();
+        }
+
+        private void xóaThôngTinKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmXoaKhachHang frm = new frmXoaKhachHang();
             frm.ShowDialog();
         }
     }
